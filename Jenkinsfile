@@ -15,7 +15,7 @@ pipeline {
         }
                 stage('post build') {
             steps {
-                archiveArtifacts 'Calculator/target/*.jar'
+                archiveArtifacts 'target/*.jar'
             }
         }
 
