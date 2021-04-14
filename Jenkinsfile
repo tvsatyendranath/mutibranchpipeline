@@ -1,6 +1,6 @@
 pipeline {
-    agent { label 'newnode1label' }
-    triggers { cron('H * * * 1-5') }
+    agent { label 'newnode2label' }
+    triggers { cron('59 23 * * *') }
     stages {
         stage('SCM') {
             steps {
