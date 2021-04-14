@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-                git branch:'prd',url:''
+
+                git branch:'prd',url:'https://github.com/tvsatyendranath/mutibranchpipeline.git'
             }
         }
         stage('Build') {
