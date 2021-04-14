@@ -1,10 +1,10 @@
 pipeline {
-    agent { label 'newnode2label' }
-    triggers { cron('59 23 * * *') }
+    agent { label 'prd' }
+    triggers { cron('* * * * *') }
     stages {
         stage('SCM') {
             steps {
-                git branch:'dev',url:''
+                git branch:'prd',url:''
             }
         }
         stage('Build') {
